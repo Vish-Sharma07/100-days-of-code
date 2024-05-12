@@ -1,2 +1,22 @@
+// 1st chalenge - Hello, World! :
 if __name__ == '__main__':
     print("")
+
+// 2nd challenge - Python - if-else() :
+import math
+import os
+import random
+import re
+import sys
+if __name__ == '__main__':
+    n = int(input().strip())
+
+//3rd challenge - Arithmetic Operators :
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+
+//4th Challeneg - Python Division : 
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
