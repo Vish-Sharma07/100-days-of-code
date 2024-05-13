@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+set_n = set(map(int, input().split()))
+m = int(input())
+set_m = set(map(int,input().split()))
+a = (set_n.difference(set_m))
+b = (set_m.difference(set_n))
+ans = a.union(b)
+for i in sorted(ans):
+    print(i)
+    
