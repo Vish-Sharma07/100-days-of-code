@@ -1,0 +1,5 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+width = int(input()) #This must be an odd no
+c = 'H'
+for i in range(width):
+    print((c*i).rjust(width-1) + c + (c*i).ljust(width-1))
