@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import namedtuple
+input_ = int(input())
+my_fields = input().split()
+total_marks = 0
+for i in range(input_):
+    students = namedtuple('my_student', my_fields)
+    ID, MARKS, CLASS, NAME = input().split()
+    my_student = students(ID, MARKS, CLASS, NAME)
+    total_marks += int(my_student.MARKS)
+print((total_marks/ input_))   
