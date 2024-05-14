@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import defaultdict
+int_n, int_m = map(int, input().split())
+d = defaultdict(list)
+for i in range(int_n):
+    ans1 = input()
+    d[ans1].append(i+1)
+for j in range(int_m):
+    ans2 = input()
+    if ans2 in d:
+        print(*d[ans2])
+    else:
+        print(-1)        
