@@ -1,0 +1,29 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+
+m = re.findall(r"(?<=[^aeiou])([aeiou]{2,})(?=[^aeiou])", input(), re.IGNORECASE)
+
+if m:
+    print(*m, sep="\n")
+else:
+    print(-1)
+
+if __name__ == '__main__':
+    N = int(input())
+    List = []
+    for i in range(N):
+        command = input().split();
+        if command[o] == "insert":
+            List.insert(int(command[1]),int(command[2]));
+        if command[o] == "append":
+            List.append(int(command[1]));
+        if command[o] == "pop":
+            List.pop();
+        if command[o] == "print":
+            print(List);       
+        if command[o] == "remove":
+            List.remove(int(command[1]));
+        if command[o] == sort:
+            List.sort();
+        else:
+             List.reverse();        
