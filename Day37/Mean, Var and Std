@@ -1,6 +1,8 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-import numpy
-n, m = map(int, input().split())
-lista = [list(map(int, input().split())) for i in range(n)]
-ar = numpy.array(lista)
-print(max(numpy.min(ar,axis = 1)))
+
+import numpy as np
+n,m=map(int,input().split())
+a = np.array([input().split() for _ in range(n)],dtype=np.float)
+print(np.mean(a,axis=1))
+print(np.var(a,axis=0))
+print(np.std(a,axis=None))
