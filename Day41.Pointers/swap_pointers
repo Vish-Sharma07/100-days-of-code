@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+void swap(int* a, int* b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+int main(){
+    int x,y;
+    cout<<"Enter value of x: ";
+    cin>>x;
+    cout<<"Enter value of y: ";
+    cin>>y;
+    cout<<"Values before swapping are : "<<x<<" "<<y<<endl;
+    swap(&x, &y);
+    cout<<x<<" "<<y<<endl;
+}
