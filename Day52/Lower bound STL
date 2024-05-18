@@ -1,0 +1,33 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n;
+    cin>>n;
+    vector<int> vec(n);
+    for(int i=0; i<n; i++){
+        cin>>vec[i];
+    } 
+    int q;
+    cin >> q; 
+
+    for (int i = 0; i < q; i++) {
+        int x;
+        cin >> x; 
+
+        vector<int>::iterator low = lower_bound(vec.begin(), vec.end(), x);
+
+        if (vec[low - vec.begin()] == x) {
+            cout << "Yes " << (low - vec.begin() + 1) << endl; 
+        } else {
+            cout << "No " << (low - vec.begin() + 1) << endl; 
+        }
+    }
+    return 0;
+}
